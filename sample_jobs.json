@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Senior Project Manager",
+    "company": "Example Company",
+    "location": "Remote - United States",
+    "work_arrangement": "Remote",
+    "salary_range": "$115,000 - $140,000",
+    "employment_type": "Full-time",
+    "environment_type": "Internal corporate team",
+    "canonical_url": "https://example.com/jobs/senior-project-manager",
+    "description": "Lead cross-functional programs, budgets, schedules, executive communication, risk management, stakeholder alignment, and process improvement across multiple business teams."
+  },
+  {
+    "title": "Registered Nurse",
+    "company": "Example Medical Center",
+    "location": "Columbus, OH",
+    "work_arrangement": "Onsite",
+    "salary_range": "$78,000 - $96,000",
+    "employment_type": "Full-time",
+    "environment_type": "Hospital",
+    "canonical_url": "https://example.com/jobs/registered-nurse",
+    "description": "Provide patient-centered care, coordinate treatment plans, document clinical outcomes, educate patients, and collaborate with an interdisciplinary care team. Active RN license required."
+  }
+]

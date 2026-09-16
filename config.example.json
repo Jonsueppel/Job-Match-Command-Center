@@ -1,0 +1,39 @@
+{
+  "app": {
+    "title": "Job Match Command Center",
+    "subtitle": "Personal job discovery, resume matching, alerts, and application tracking",
+    "setup_complete": false
+  },
+  "candidate_name": "",
+  "candidate_email": "",
+  "home_location": "",
+  "target_salary_min": 0,
+  "job_search": {
+    "days_posted": 7,
+    "us_only": true,
+    "allow_global_remote": false,
+    "resume_driven_search": true,
+    "queries": [],
+    "locations": ["remote"],
+    "required_terms": [],
+    "excluded_terms": []
+  },
+  "ideal_job": {
+    "enabled": true,
+    "desired_terms": [],
+    "must_have_any": [],
+    "strong_titles": [],
+    "dealbreakers": [],
+    "target_companies": []
+  },
+  "email": {
+    "enabled": false,
+    "smtp_host": "",
+    "smtp_port": 587,
+    "smtp_username": "",
+    "smtp_password": "",
+    "smtp_starttls": true,
+    "from_email": "",
+    "to_email": ""
+  }
+}

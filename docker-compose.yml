@@ -1,0 +1,38 @@
+services:
+  finance-job-ranker:
+    build: .
+    container_name: finance-job-ranker
+    restart: unless-stopped
+    ports:
+      - "8088:8088"
+    environment:
+      - APP_DATA_DIR=/data
+      - TZ=America/New_York
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./data:/data
+      - ./imports:/data/imports
+      - ./backups:/data/backups
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8088/healthz', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+  finance-job-ranker-scheduler:
+    build: .
+    container_name: finance-job-ranker-scheduler
+    restart: unless-stopped
+    command: ["python", "/app/app.py", "--scheduler"]
+    environment:
+      - APP_DATA_DIR=/data
+      - TZ=America/New_York
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./data:/data
+      - ./imports:/data/imports
+      - ./backups:/data/backups
