@@ -21,8 +21,8 @@ A self-hosted job discovery and application-tracking app. Upload a resume, descr
 Requirements: Docker with Docker Compose.
 
 ```bash
-git clone https://github.com/Jonsueppel/job-match-command-center.git
-cd job-match-command-center
+git clone https://github.com/Jonsueppel/Job-Match-Command-Center.git
+cd Job-Match-Command-Center
 cp .env.example .env
 ```
 
